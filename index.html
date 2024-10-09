@@ -13,12 +13,6 @@
             .menu {
                 display: none !important;
             }
-
-            .container {
-                overflow: auto;
-                height: 222pc !important;
-            }
-
             .maincontainer {
                 overflow: hidden;
             }
@@ -39,7 +33,9 @@
                 width: 318px;
                 height: 290px;
             }
-
+            .thirdmaincontainer{
+                padding-bottom: 36px;
+            }
             .over30 {
                 display: flex;
                 justify-content: center;
@@ -56,13 +52,16 @@
             .shadow {
                 display: none !important;
             }
-
+            .third-second .pic{
+                width: 142px !important;
+            }
             .second-sec h2 {
                 font-size: 28px !important;
             }
 
             .image {
                 width: fit-content !important;
+                overflow: hidden;
             }
 
             .secon-image {
@@ -70,23 +69,27 @@
             }
 
             .question-second {
-                height: 51px !important;
+                width: 174px !important;
+        display: flex;
+        padding-left: 8px;
             }
 
             #for-name {
-                height: 93px !important;
+                height: 87px !important;
                 justify-content: space-evenly !important;
-            }
-
-            .image-last {
-                height: 56px !important;
+                width: 255px !important;
             }
 
             .confidential {
-                top: 116px !important;
-                right: 9px !important;
-                height: 26px !important;
+                top: 131px !important;
+                right: 10px !important;
+                height: 24px !important;
                 transform: rotate(15deg) !important;
+            }
+
+            #tell{
+                margin-left: 9px !important;
+                width: 317px !important;
             }
 
             .third {
@@ -94,28 +97,52 @@
             }
 
             .container-first {
-                padding-left: 15px;
+     justify-content: center !important;
                 padding-top: 14px;
                 background-color: #ffffff;
             }
-
+            .image-last{
+    width: 339px !important;
+    flex-direction: column;
+    height: 71px !important;
+    justify-content: space-evenly !important;
+}
             .first-sec {
                 height: 37pc !important;
-                width: 421px !important;
+                width: 305px !important;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
             }
+            .question-second h3{
+                font-size: 16px !important;
+                width: 181px !important;
+            }
+            .question-second span{
+                font-size: 16px !important;
+            }
+            .image p{
+                height: 47px !important;
+                font-size: 13px !important;
+                padding-left: 9px !important;
+            }
+            .image p span {
+                font-size: 14px !important;
+            }
+            .third-family {
+                width: 350px;
+            }
+
         }
 
         @font-face {
             font-family: "PERTID";
             src: url("/project4.html/dropbox /Text\ Regular\ Regular.ttf/PERTIBD.TTF");
         }
-
+        @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+        /*  */
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Qwitcher+Grypen:wght@400;700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
+/*  */
         @font-face {
             font-family: "Bond";
             src: url("/project4.html/dropbox /Text\ Regular\ Regular.ttf/PERTIBD.TTF");
@@ -124,8 +151,11 @@
 
         @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-        
-
+        /*  */
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+        /*  */
+   
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
         body {
             margin: 0;
         }
@@ -284,7 +314,7 @@
         }
 
         .image {
-            width: 371px;
+            width: 460px;
             background-image: url('/assets/images/form_bg.jpg');
             background-repeat: no-repeat;
             background-size: 100% 100%;
@@ -295,15 +325,15 @@
         }
 
         .image .question {
-            width: 142px;
-            height: 33px;
-            display: flex;
-            background-color: #a00f11;
+            width: 168px;
+    height: 36px;
+    display: flex;
+    background-color: #a00f11;
         }
 
         .question h4 {
             margin: auto;
-            font-size: 21px;
+            font-size: 23px;
             font-weight: bolder;
             cursor: pointer;
             color: white;
@@ -311,27 +341,27 @@
         }
 
         .question-second {
-            height: 38px;
-            width: 199px;
+            height: 70px;
+            width: 271px;
 
         }
 
         .question-second h3 {
             margin: auto;
-            font-size: 16px;
-            color: #161616;
-            font-family: system-ui;
-            width: 172px;
-            cursor: default;
-            font-weight: 700;
-            padding-top: 6px;
+    font-size: 24px;
+    color: #161616;
+    font-family: system-ui;
+    width: 215px;
+    cursor: default;
+    font-weight: 700;
+    padding-top: 6px;
         }
 
         .question-second span {
             color: #31526d;
             cursor: default;
             line-height: 4px;
-            font-size: 21px;
+            font-size: 25px;
             font-weight: 800;
             font-family: sans-serif;
             letter-spacing: 1.1px;
@@ -339,20 +369,20 @@
 
         .image p {
             margin: 0;
-            cursor: pointer;
-            height: 36px;
-            font-size: 12px;
-            line-height: 17px;
-            font-weight: 700;
-            font-family: sans-serif;
-            letter-spacing: 0.1px;
-            padding-left: 15px;
-            color: #565759;
-            width: 340px;
+    cursor: pointer;
+    height: 44px;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 500;
+    font-family: sans-serif;
+    letter-spacing: 0.1px;
+    padding-left: 30px;
+    color: #565759;
+    width: 403px;
         }
 
         .image p span {
-            font-size: 15px;
+            font-size: 17px;
             line-height: 10px;
             font-weight: 700;
             color: #313131;
@@ -360,8 +390,8 @@
         }
 
         #for-name {
-            height: 77px;
-            width: 240px;
+            height: 76px;
+            width: 300px;
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
@@ -370,32 +400,33 @@
         }
 
         .name {
-            height: 22px;
+            height: 25px;
         }
 
         .name h3 {
             margin: 0;
             display: inline;
-            font-size: 11px;
+            font-size: 12px;
             font-weight: 700;
             cursor: default;
             font-family: sans-serif;
             letter-spacing: 0.1px;
-            padding-left: 13px;
+     
             color: #232628;
         }
 
         input {
-            height: 19px;
+            height: 17px;
             border: 0.5px solid #c0c0c0;
         }
 
         #tell {
-            width: 309px;
-            margin-left: 17px;
+            width: 388px;
+            margin-left: 38px;
             font-weight: 600;
-            padding-bottom: 40px;
+            padding-bottom: 30px;
             padding-left: 9px;
+            height: 23px;
         }
 
         #tell::placeholder {
@@ -403,8 +434,8 @@
         }
 
         .image-last {
-            height: 41px;
-            width: 342px;
+            height: 59px;
+            width: 440px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -412,19 +443,19 @@
 
         .image-last h5 {
             margin: 0;
-            font-size: 11px;
-            letter-spacing: 0.1px;
-            cursor: pointer;
-            display: flex;
-            font-weight: 500;
-            color: #565751;
-            
-            padding-left: 19px;
+    font-size: 12px;
+    letter-spacing: 1.1px;
+    cursor: pointer;
+    font-family:"Space Grotesk", serif ;
+    display: flex;
+    font-weight: 600;
+    color: #565751;
+    padding-left: 22px;
         }
 
         .ask-about {
-            width: 199px;
-            height: 35px;
+            width: 251px;
+            height: 36px;
             display: flex;
             background-color: #980806;
         }
@@ -520,7 +551,11 @@
             right: 40px;
             display: flex;
         }
-
+        .third-click {
+           box-shadow: 
+           -17px 0 10px -5px rgb(122 107 107 / 50%),
+            16px 0 10px -5px rgb(43 38 38 / 50%);
+        }
         .third-click h5 {
             margin: auto;
             color: white;
@@ -595,7 +630,11 @@
             left: 56px;
             display: flex;
         }
-
+        .second-red {
+            box-shadow: 
+            -17px 0 10px -5px rgb(122 107 107 / 50%),
+            16px 0 10px -5px rgb(43 38 38 / 50%);
+        }
         .second-red h3 {
             margin: auto;
             color: white;
@@ -638,6 +677,11 @@
             display: flex;
         }
 
+        .second-last{
+            box-shadow: 
+            -17px 0 10px -5px rgb(122 107 107 / 50%),
+            16px 0 10px -5px rgb(43 38 38 / 50%);
+        }
         .second-last h5 {
             margin: auto;
             color: white;
@@ -652,7 +696,12 @@
             width: 302px;
             position: relative;
         }
-
+        
+        #third-last {
+            box-shadow: 
+            -17px 0 10px -5px rgb(122 107 107 / 50%),
+            16px 0 10px -5px rgb(43 38 38 / 50%);
+        }
         .logos {
             height: 120px;
             position: relative;
@@ -744,7 +793,7 @@
 
         .first-sec {
             width: 293px;
-            height: 56pc;
+            height: 60pc;
         }
 
         .first-box {
@@ -926,10 +975,13 @@
             background-color: #a0100e;
             position: relative;
             left: 47px;
-            top: -1px;
-            
+            top: -1px;   
         }
-
+        .third-secc-third {
+    box-shadow: 
+    -17px 0 10px -5px rgba(0, 0, 0, 0.5),
+        16px 0 10px -5px rgba(0, 0, 0, 0.5);
+        }
         .third-secc-third h5 {
             margin: auto;
             width: 90px;
@@ -938,7 +990,6 @@
             font-family: sans-serif;
             font-weight: 600;
             color: white;
-            box-shadow: 0px 3px 9px 2px #59534E;
             padding: 3px 4px 4px 4px;
         }
 
@@ -974,7 +1025,7 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-around;
-            height: 96px;
+            height: 104px;
         }
 
         .finish {
@@ -1075,12 +1126,11 @@
                                 class="confidential"
                                 src="/assets/images/confidential.png"
                                 alt
-                                style="   position: absolute;
-top: 119px;
-right: 16px;
-transform: rotate(18deg);
-height: 28px;
-"
+                                style="       position: absolute;
+                                top: 130px;
+                                right: 23px;
+                                transform: rotate(8deg);
+                                "
                             >
                             <!--  -->
                             <input id="tell" type="textareas" placeholder="Tell us about your case here...">
@@ -1380,18 +1430,17 @@ margin-top: 15px;">
                                     FOLLOW
                                     <span>US</span>
                                 </h3>
-                                <hr style="    width: 165px;
-    margin: 0; ">
-                                <img
-                                    class="shadow"
-                                    src="/assets/images/lf_bt_hr_shadow.png"
-                                    alt
-                                    style="width: 106px;
-height: 6px;
-position: relative;
-left: 37px;
-top: -9px;"
-                                >
+                                
+                                <hr style="        width: 172px;
+                                margin: 0;
+                                height: 2px;
+                                border: 0;
+                                background: #807f7d;
+    ">
+                                <img src="/assets/images/lf_bt_hr_shadow.png" alt style="width: 118px;
+                                border:0;">
+
+
                                 <div class="finish">
                                     <img src="/assets/images/fb_icon.gif" alt style="cursor: pointer;">
                                     <img src="/assets/images/google_icon.gif" alt style="cursor: pointer;">
@@ -1405,4 +1454,4 @@ top: -9px;"
             </div>
         </div>
     </body>
-</html>
+    </html>
