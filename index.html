@@ -5,12 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>keefer law project</title>
         <style>
-        @media only screen and (max-width: 1010px) {
+        @media only screen and (max-width: 1190px) {
             .second-menu-width {
                 display: none !important;
             }
 .body{
     overflow: hidden;
+}
+
+#avo{
+    width: 131px !important;
+}
+#national{
+    width:131px !important ;
+    height: 137px;
 }
             .menu {
                 display: none !important;
@@ -22,17 +30,31 @@
                 width: 156px !important;
     height: 38px !important; 
             }
-            .second-family {
-                width: 350px !important;
-                flex-wrap: wrap;
-                padding-right: 0px !important;
+            .national{
+                flex-direction: row !important;
+        display: flex !important;
+        width: auto !important;
+        flex-wrap: wrap !important;   
+        gap: 12px;    
+        align-items: center ;
             }
+  .client{
+    display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 22px;
+        padding-left: 10px;
+        padding-right: 10px;
+  }
 
             .second-sec p {
-                font-size: 14px !important;
-                width: 328px !important;
-                padding-left: 17px;
-                padding-bottom: 29px;
+                font-size: 12px !important;
+                font-weight: 900;
+
+            }
+            .second-sec h2 {
+                font-size: 22px !important;
             }
             .question h4{
                 font-size: 26px !important;
@@ -44,10 +66,7 @@
             .thirdmaincontainer{
                 padding-bottom: 36px;
             }
-            .over30 {
-                display: flex;
-                justify-content: center;
-            }
+        
 
             .first-image {
                 width: 349px;
@@ -65,19 +84,19 @@
                 right: 14px !important;
                 top: 32px  !important;
             }
-            .second-sec h2 {
-                font-size: 28px !important;
-            }
+.follow{
+align-items: center !important;
+}
+        /* .second-sec{
+            display: flex;
+    overflow: hidden;
+     align-content: center; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+        } */
 
-            .image {
-                width: fit-content !important;
-                overflow: hidden;
-            }
-
-            .secon-image {
-                width: 350px !important;
-            }
-
+   
             .question-second {
                 width: 174px !important;
         display: flex;
@@ -97,11 +116,6 @@
                 transform: rotate(15deg) !important;
             }
 
-            #tell{
-                margin-left: 14px !important;
-                width: 310px !important;
-            }
-
             .third {
                 width: 356px !important;
             }
@@ -117,17 +131,7 @@
     height: 71px !important;
     justify-content: space-evenly !important;
 }
-            .first-sec {
-                height: 37pc !important;
-                width: 305px !important;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            .question-second h3{
-                font-size: 16px !important;
-                width: 181px !important;
-            }
+
             .question-second span{
                 font-size: 16px !important;
             }
@@ -144,29 +148,48 @@
     top: 152px !important;
     width: 101px !important;
             }
+            .secon-image{
+                width: 100% !important;
+                margin-bottom: 30px;
+            }
+        }
+        @media only screen and (max-width: 860px) { 
+           .second-sec{
+
+               display: flex;
+               overflow: hidden;
+               align-content: center;
+               flex-direction: row;
+               flex-wrap: wrap;
+               justify-content: center;
+               
+            }
         }
 
         @font-face {
             font-family: "PERTID";
             src: url("/project4.html/dropbox /Text\ Regular\ Regular.ttf/PERTIBD.TTF");
         }
-        @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-        /*  */
+        @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap'); 
+    
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Qwitcher+Grypen:wght@400;700&display=swap');
 /*  */
         @font-face {
             font-family: "Bond";
             src: url("/project4.html/dropbox /Text\ Regular\ Regular.ttf/PERTIBD.TTF");
         }
+
         @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&display=swap');
 
         @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
         @import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-        body {
-            margin: 0;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    
+body{
+    margin: 0;
+}
 
         .maincontainer {
             display: flex;
@@ -183,8 +206,7 @@
         }
 
         /* first contact office */
-        .container-first {
-            height: 200px;
+        .container-first {  
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -308,38 +330,41 @@
 
 
         .second-family {
-            display: flex;
-    flex-direction: row;
-    gap: 59px;
+            max-width: 1260px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 40.5px 37px 40.5px 37px;
     overflow: hidden;
-    padding-top: 33px;
-    justify-content: center;
-    flex-wrap: wrap;
+        }
+        #first-con-first-img{
+            width: 55%;
         }
 .secon-image{
-    width: 50%;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.second-cont-secon{
+    display: flex;
+    justify-content: space-between;
 }
         .image {
-            width: 38%;
+            width: 43%;
     background-image: url("/assets/images/form_bg.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    display: flex;
     position: relative;
-    flex-wrap: wrap;
     overflow: hidden;
-    padding: 0 12px 12px 0px;
-    flex-direction: row;
         }
 
         .image .question {
             width: 230px;
     height: 49px;
     display: flex;
-    display: flex;
     background-color: #a00f11;
         }
-
+/*  */
         .question h4 {
             margin: auto;
             font-size: 36px;
@@ -350,19 +375,16 @@
         }
 
         .question-second {
-            width: 246px;
+            width: 281px;
         }
 
         .question-second h3 {
-            margin: auto;
-    font-size: 23px;
+            font-size: 23px;
     color: #161616;
     font-family: system-ui;
-    width: 213px;
     cursor: default;
     font-weight: 700;
-    padding-left: 37px;
-    padding-top: 14px;
+    margin: 6px;
         }
 
         .question-second span {
@@ -374,17 +396,17 @@
     font-family: sans-serif;
     letter-spacing: 1.1px;
         }
-
         .image p {
-            margin: 0;
+            margin: auto;
     cursor: pointer;
-    font-size: 19px;
-    font-weight: 500;
+    font-weight: 600;
     font-family: sans-serif;
-    letter-spacing: 0.1px;
-    padding-left: 38px;
-    color: #404144;
+    font-size: 17px;
+    max-width: 464px;
+    padding-left: 2px;
+    color: rgba(0, 0, 0, 0.767);
         }
+
 
         .image p span {
             font-size: 20px;
@@ -426,13 +448,14 @@
     }
         input {
             height: 20px;
-            word-break: 191px;
             border: 0.5px solid #c0c0c0;
         }
-
+#text-second-four{
+    max-width: 465px;
+    margin: auto;
+}
         #tell {
             width: 449px;
-    margin-left: 54px;
     font-weight: 600;
     padding-bottom: 30px;
     padding-left: 9px;
@@ -443,6 +466,10 @@
             color: #555151;
             font-size: larger;
         }
+        #section-third-last{
+            max-width: 511px;
+            margin: auto;
+        }
 
         .image-last {
             height: 59px;
@@ -450,7 +477,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 31px;
+  
         }
 
         .image-last h5 {
@@ -467,7 +494,7 @@
 
         .ask-about {
             width: 276px;
-    height: 36px;
+    height: 51px;
     display: flex;
     background-color: #980806;
         }
@@ -523,7 +550,6 @@
             font-weight: 700;
             color: #763a3a;
         }
-
         .third-first p {
             margin-bottom: 0;
     width: 213px;
@@ -796,21 +822,17 @@
 
         .practice {
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 24pc;
-            padding-left: 7px;
-            width: 288px;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24pc;
+    padding-left: 7px;
+    width: 288px;
         }
 
         .practice span {
             color: #692b30;
         }
 
-        .first-sec {
-            width: 293px;
-            height: 60pc;
-        }
 
         .first-box {
             width: 278px;
@@ -895,12 +917,12 @@
 
         .more-about {
             width: 275px;
-            height: 210px;
-            padding-top: 26px;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: space-around;
+    height: 210px;
+    padding-top: 26px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
         }
 
         .more-about h1 {
@@ -958,7 +980,9 @@
         }
 
         .third-sec {
-            width: 185px;
+         display: flex;
+         flex-direction: column;
+         margin-bottom:25px;
         }
 
         .third-sec h2 {
@@ -1009,7 +1033,7 @@
         }
 
         .national {
-            height: 296px;
+            height: 243px;
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
@@ -1029,18 +1053,13 @@
             cursor: default;
         }
 
-        .client {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 29px;
-        }
-
         .follow {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             flex-wrap: wrap;
             justify-content: space-around;
             height: 104px;
+            align-items: center;
         }
 
         .finish {
@@ -1069,6 +1088,14 @@
 
         #tell ::placeholder {
             color: #33337f;
+        }
+        #avo{
+width: 131px;
+height: 112px;
+        }
+        #avo{
+            width: 131px;
+            height: 105px;
         }
         </style>
     </head>
@@ -1099,64 +1126,78 @@
                             <h2>CONTACT</h2>
                         </div>
                     </div>
-                </div>
-                <div class="over30">
+                </div>         
+        <!-- ..............................section first.................... -->
+             
                     <div class="second-family">
-                        <img class="secon-image" src="/assets/images/gurantee_banner.gif" alt>
-                        <div class="image">
-                            <div class="question">
-                                <h4>QUESTIONS?</h4>
+                <div id="first-con-first-img">
+                    <img class="secon-image" src="/assets/images/gurantee_banner.gif" alt>
+                </div>
+                    <div class="image">
+                            <div class="second-cont-secon">
+
+                                <div class="question">
+                                    <h4>QUESTIONS?</h4>
+                                </div>
+                                <div class="question-second">
+                                    <h3>
+                                        Have a
+                                        <span>Question</span>
+                                        <br>
+                                        About Your Case?
+                                    </h3>
+                                </div>
                             </div>
-                            <div class="question-second">
-                                <h3>
-                                    Have a
-                                    <span>Question</span>
-                                    <br>
-                                    About Your Case?
-                                </h3>
-                            </div>
-                            <p>
-                                Enter your information and get your questions
-                            answered quickly and discreetly or call us at:
-                                <span>540.433.6906</span>
-                            </p>
-                            <!--  -->
+                                <p>
+                                    Enter your information and get your questions
+                                    answered quickly and discreetly or call us at:
+                                    <span>540.433.6906</span>
+                                </p>
+                <!--  -->
+                                <div id="second-third">
                             <div id="for-name">
                                 <div class="name">
                                     <h3>NAME:</h3>
                                     <input type="text" placeholder>
                                 </div>
-                                <!--  -->
+                             <!--  -->
                                 <div class="name">
                                     <h3>EMAIL:</h3>
                                     <input type="text" placeholder>
                                 </div>
-                                <!--  -->
+                        <!--  -->
                                 <div class="name">
                                     <h3>PHONE:</h3>
                                     <input type="text" placeholder>
+                                    <div id="section-third-third">
+                                    </div>
+                                    <img
+                                        class="confidential"
+                                        src="/assets/images/confidential.png"
+                                        alt
+                                        >
                                 </div>
-                            </div>
-                            <img
-                                class="confidential"
-                                src="/assets/images/confidential.png"
-                                alt
-                            >
-                            <!--  -->
-                            <input id="tell" type="textareas" placeholder="Tell us about your case here...">
-                            <div class="image-last">
-                                <h5>100% Privacy Guaranteed</h5>
-                                <div class="ask-about">
-                                    <h6>
-                                        Ask About Your Case &nbsp;
-                                        <img src="/assets/images/bullet_white.gif" alt>
-                                    </h6>
-                                </div>
-                            </div>
+                            </div> 
                         </div>
+                            
+                            <div id="text-second-four">
+                                <input id="tell" type="textareas" placeholder="Tell us about your case here...">
+                            </div>
+                            <div id="section-third-last">
+                                <div class="image-last">
+                                    <h5>100% Privacy Guaranteed</h5>
+                                    <div class="ask-about">
+                                        <h6>
+                                            Ask About Your Case &nbsp;
+                                            <img src="/assets/images/bullet_white.gif" alt>
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                     
                     </div>
                 </div>
-                <!--  -->
+        <!--  ..............................section second...................  -->
              <div class="third-family">
 
                     <div class="third-first">
@@ -1278,7 +1319,7 @@ top: 62px;"
                     <img class="shadow" src="/assets/images/hr_shadow.png" alt>
                 </div> 
 
-<!-- \\..........................thirdmaincontainer.............................// -->
+       <!-- ........................thirdmaincontainer........................  -->
                 
 <div class="thirdmaincontainer">
                     <div class="last-section">
@@ -1425,8 +1466,8 @@ margin-top: 15px;">
                                 </div>
                             </div>
                             <div class="national">
-                                <img src="/assets/images/avo_rating_large.gif" alt>
-                                <img src="/assets/images/national_college_large.gif" alt>
+                                <img id="avo" src="/assets/images/avo_rating_large.gif" alt>
+                                <img id="national" src="/assets/images/national_college_large.gif" alt>
                             </div>
                             <div class="follow">
                                 <h3>
@@ -1442,7 +1483,7 @@ margin-top: 15px;">
     ">
                                 <img src="/assets/images/lf_bt_hr_shadow.png" alt style="width: 118px;
                                 border:0;
-                                height: 7px;
+                                height: 8px;
                                 overflow: hidden;
                                 ">
 
