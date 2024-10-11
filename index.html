@@ -5,18 +5,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>keefer law project</title>
         <style>
-        @media only screen and (max-width: 1297px) {
+        @media only screen and (max-width: 1010px) {
             .second-menu-width {
                 display: none !important;
             }
-
+.body{
+    overflow: hidden;
+}
             .menu {
                 display: none !important;
             }
             .maincontainer {
                 overflow: hidden;
             }
-
+            .image .question {
+                width: 156px !important;
+    height: 38px !important; 
+            }
             .second-family {
                 width: 350px !important;
                 flex-wrap: wrap;
@@ -27,8 +32,11 @@
                 font-size: 14px !important;
                 width: 328px !important;
                 padding-left: 17px;
+                padding-bottom: 29px;
             }
-
+            .question h4{
+                font-size: 26px !important;
+            }
             .second-last {
                 width: 318px;
                 height: 290px;
@@ -53,7 +61,9 @@
                 display: none !important;
             }
             .third-second .pic{
-                width: 142px !important;
+                width: 122px !important;
+                right: 14px !important;
+                top: 32px  !important;
             }
             .second-sec h2 {
                 font-size: 28px !important;
@@ -71,7 +81,7 @@
             .question-second {
                 width: 174px !important;
         display: flex;
-        padding-left: 8px;
+        height: 50px;
             }
 
             #for-name {
@@ -81,8 +91,8 @@
             }
 
             .confidential {
-                top: 131px !important;
-                right: 10px !important;
+                top: 113px !important;
+                right: 8px !important;
                 height: 24px !important;
                 transform: rotate(15deg) !important;
             }
@@ -129,6 +139,11 @@
             .image p span {
                 font-size: 14px !important;
             }
+            .second-container-third-hr {
+    right: 2px !important;
+    top: 152px !important;
+    width: 101px !important;
+            }
         }
 
         @font-face {
@@ -147,11 +162,8 @@
 
         @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-        /*  */
-        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-        /*  */
-   
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
         body {
             margin: 0;
         }
@@ -181,12 +193,12 @@
         }
 
         .call-help {
-            width: 410px;
-            height: 128px;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
+            width: 439px;
+    height: 128px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
         }
 
         .call-help h3 {
@@ -285,27 +297,22 @@
 
         .second-menu-width {
             display: flex;
-            flex-direction: row;
-            gap: 32px;
-            align-items: center;
-            flex-wrap: wrap;
-            justify-content: flex-end;
-            position: relative;
-            right: 34px;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    position: relative;
+    right: 50px;
         }
 
-        .secondmaincontainer {
-            display: flex;
-        }
 
         .second-family {
             display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 59px;
     overflow: hidden;
     padding-top: 33px;
-    padding-right: 10px;
-    padding-left: 10px;
     justify-content: center;
     flex-wrap: wrap;
         }
@@ -313,26 +320,29 @@
     width: 50%;
 }
         .image {
-            width: 44%;
-            background-image: url('/assets/images/form_bg.jpg');
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-            display: flex;
-            flex-wrap: wrap;
-            align-content: normal;
-            position: relative;
+            width: 38%;
+    background-image: url("/assets/images/form_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding: 0 12px 12px 0px;
+    flex-direction: row;
         }
 
         .image .question {
-            width: 168px;
-    height: 36px;
+            width: 230px;
+    height: 49px;
+    display: flex;
     display: flex;
     background-color: #a00f11;
         }
 
         .question h4 {
             margin: auto;
-            font-size: 23px;
+            font-size: 36px;
             font-weight: bolder;
             cursor: pointer;
             color: white;
@@ -340,62 +350,57 @@
         }
 
         .question-second {
-            height: 70px;
-            width: 271px;
-
+            width: 246px;
         }
 
         .question-second h3 {
             margin: auto;
-    font-size: 24px;
+    font-size: 23px;
     color: #161616;
     font-family: system-ui;
-    width: 215px;
+    width: 213px;
     cursor: default;
     font-weight: 700;
-    padding-top: 6px;
+    padding-left: 37px;
+    padding-top: 14px;
         }
 
         .question-second span {
             color: #31526d;
-            cursor: default;
-            line-height: 4px;
-            font-size: 25px;
-            font-weight: 800;
-            font-family: sans-serif;
-            letter-spacing: 1.1px;
+    cursor: default;
+    line-height: 4px;
+    font-size: 25px;
+    font-weight: 800;
+    font-family: sans-serif;
+    letter-spacing: 1.1px;
         }
 
         .image p {
             margin: 0;
     cursor: pointer;
-    height: 44px;
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 19px;
     font-weight: 500;
     font-family: sans-serif;
     letter-spacing: 0.1px;
-    padding-left: 30px;
-    color: #565759;
-    width: 403px;
+    padding-left: 38px;
+    color: #404144;
         }
 
         .image p span {
-            font-size: 17px;
-            line-height: 10px;
-            font-weight: 700;
-            color: #313131;
-            font-family: sans-serif;
+            font-size: 20px;
+    font-weight: 700;
+    color: #313131;
+    font-family: sans-serif;
         }
 
         #for-name {
-            height: 76px;
-            width: 300px;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
+            height: 86px;
+    width: 343px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
         }
 
         .name {
@@ -405,80 +410,89 @@
         .name h3 {
             margin: 0;
             display: inline;
-            font-size: 12px;
+            font-size: 14px;
             font-weight: 700;
             cursor: default;
             font-family: sans-serif;
             letter-spacing: 0.1px;
-     
             color: #232628;
         }
-
+        .confidential {
+            position: absolute;
+    top: 170px;
+    right: 48px;
+    transform: rotate(7deg);
+    height: 52px;
+    }
         input {
-            height: 17px;
+            height: 20px;
+            word-break: 191px;
             border: 0.5px solid #c0c0c0;
         }
 
         #tell {
-            width: 388px;
-            margin-left: 38px;
-            font-weight: 600;
-            padding-bottom: 30px;
-            padding-left: 9px;
-            height: 23px;
+            width: 449px;
+    margin-left: 54px;
+    font-weight: 600;
+    padding-bottom: 30px;
+    padding-left: 9px;
+    height: 45px;
         }
 
         #tell::placeholder {
-            color: #676767;
+            color: #555151;
+            font-size: larger;
         }
 
         .image-last {
             height: 59px;
-            width: 440px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+    width: 484px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 31px;
         }
 
         .image-last h5 {
             margin: 0;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1.1px;
     cursor: pointer;
-    font-family:"Space Grotesk", serif ;
+    font-family: "Tinos" serif;
     display: flex;
     font-weight: 600;
     color: #565751;
-    padding-left: 22px;
+    padding-left: 16px;
         }
 
         .ask-about {
-            width: 251px;
-            height: 36px;
-            display: flex;
-            background-color: #980806;
+            width: 276px;
+    height: 36px;
+    display: flex;
+    background-color: #980806;
         }
 
         .ask-about h6 {
             margin: auto;
-            color: white;
-            font-size: 14px;
-            font-weight: 500;
-            font-family: "Open Sans", sans-serif;
-            cursor: pointer;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer;
         }
 
         .third-family {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 66px 13px 0 13px;
-            gap: 9px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 66px 13px 0 13px;
+    gap: 20px;
+    overflow: hidden;
         }
 
         .third-first {
             height: 265px;
-            width: 302px;
+            width: 340px;
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
@@ -486,12 +500,12 @@
         }
 
         .third-first h1 {
-            font-size: 22px;
+            font-size: 26px;
             font-weight: 600;
             margin: 0;
             cursor: default;
             color: #464646;
-            width: 267px;
+            width: 286px;
             font-family: "Lora", serif;
             line-height: 33px;
         }
@@ -502,53 +516,53 @@
 
         .third-first h2 {
             margin: 0;
-            font-size: 15px;
+            font-size: 19px;
             cursor: default;
             font-family: sans-serif;
-            width: 206px;
+            width: 234px;
             font-weight: 700;
             color: #763a3a;
         }
 
         .third-first p {
             margin-bottom: 0;
-            width: 172px;
-            font-size: 15px;
-            font-weight: 500;
-            cursor: pointer;
-            font-family: sans-serif;
-            color: #5f5757;
+    width: 213px;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: sans-serif;
+    color: #5f5757;
         }
 
         .third-first h3 {
             margin-bottom: 0;
-            width: 166px;
-            cursor: pointer;
-            font-size: 15px;
-            font-weight: 500;
-            font-family: sans-serif;
-            color:#5f5757 ;
+    width: 206px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: #5f5757;
         }
 
         .third-first hr {
-            width: 158px;
-            height: 1px;
-            background-color: #bba7a7;
-            border: 0;
-            margin: 0;
-            right: 22px;
-            position: absolute;
-            top: 213px;
+            width: 192px;
+    height: 1px;
+    background-color: #bba7a7;
+    border: 0;
+    margin: 0;
+    right: 24px;
+    position: absolute;
+    top: 220px;
         }
 
         .third-click {
-            width: 109px;
-            height: 23px;
-            background-color: #b70c06;
-            position: absolute;
-            bottom: 28px;
-            right: 40px;
-            display: flex;
+            width: 106px;
+    height: 23px;
+    background-color: #b70c06;
+    position: absolute;
+    bottom: 21px;
+    right: 42px;
+    display: flex;
         }
         .third-click {
            box-shadow: 
@@ -565,69 +579,71 @@
         }
 
         .third-second {
-            height: 265px;
-            border-left: 1px solid #dbdbdb;
-            border-right: 1px solid #dbdbdb;
-            width: 385px;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            position: relative;
+            height: 248px;
+    border-left: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;
+    width: 443px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
         }
 
         .third-second h1 {
-            font-size: 22px;
-            font-weight: 700;
-            margin: 0;
-            cursor: default;
-            width: 122px;
-            color: #464646;
-            line-height: 33px;
-            font-family: "loro ,sanis";
-            margin-left: 24px;
+            font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+    cursor: default;
+    width: 145px;
+    color: #464646;
+    line-height: 33px;
+    font-family: "loro ,sanis";
+    margin-left: 24px;
         }
 
         .third-second span {
             color: #692b30;
+
         }
 
         .third-second h2 {
-            font-size: 12px;
-            font-family: sans-serif;
-            width: 119px;
-            cursor: pointer;
-            font-weight: 700;
-            color: #5f5757;
-            padding-left: 26px;
-            margin: 0;
+            font-size: 17px;
+    font-family: sans-serif;
+    width: 188px;
+    cursor: pointer;
+    font-weight: 700;
+    color: #5f5757;
+    padding-left: 27px;
+    margin: 0;
         }
 
         .third-second .pic {
-            width: 174px;
+            width: 170px;
             position: absolute;
-            right: 11px;
-            top: 5px;
+            right: 28px;
+            top: 7px;
         }
 
         .third-second hr {
-            width: 159px;
-            height: 1px;
-            background-color: #bba7a7;
-            border: 0;
-            margin: 0;
-            position: absolute;
-            top: 5pc;
-            left: 28px;
+            width: 175px;
+    height: 1px;
+    background-color: #bba7a7;
+    border: 0;
+    margin: 0;
+    position: absolute;
+    top: 89px;
+    left: 30px;
         }
 
         .second-red {
             width: 114px;
-            height: 23px;
-            background-color: #b70c06;
-            position: absolute;
-            top: 80px;
-            left: 56px;
-            display: flex;
+    height: 23px;
+    background-color: #b70c06;
+    position: absolute;
+    top: 90px;
+    left: 77px;
+    display: flex;
         }
         .second-red {
             box-shadow: 
@@ -645,25 +661,25 @@
         }
 
         .third-red h1 {
-            font-size: 22px;
-            font-weight: 700;
-            margin: 0;
-            margin-left: 24px;
-            width: 169px;
-            line-height: 33px;
-            font-family: "loro", serif;
+            font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+    margin-left: 24px;
+    width: 200px;
+    line-height: 33px;
+    font-family: "loro", serif;
         }
 
         .third-second h4 {
             height: 35px;
-            width: fit-content;
-            margin: 0;
-            cursor: pointer;
-            padding-left: 25px;
-            font-size: 12px;
-            font-family: sans-serif;
-            font-weight: 600;
-            color:#5f5757;
+    width: fit-content;
+    margin: 0;
+    cursor: pointer;
+    padding-left: 25px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #5f5757;
         }
 
         .second-last {
@@ -671,8 +687,8 @@
             height: 23px;
             background-color: #b70c06;
             position: absolute;
-            bottom: 24px;
-            left: 58px;
+            bottom: 0px;
+            left: 80px;
             display: flex;
         }
 
@@ -703,8 +719,8 @@
         }
         .logos {
             height: 120px;
-            position: relative;
-            left: 25px;
+    position: relative;
+    left: 25px;
         }
 
         .third-last h4 {
@@ -719,12 +735,13 @@
         }
         .third-last h5 {
             height: 35px;
-            width: 245px;
-            cursor: pointer;
-            margin: 0;
-            font-family: sans-serif;
-            font-weight: 600;
-            color: #5f5757;
+    width: 257px;
+    cursor: pointer;
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #5f5757;
+    font-size: 14px;
         }
 
         #end {
@@ -756,13 +773,13 @@
 
         .last-section {
             display: flex;
-            justify-content: center;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-content: center;
-            gap: 33px;
-            overflow: hidden;
-            padding: 36px 12px 0 12px;
+    justify-content: center;
+    gap: 65px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    overflow: hidden;
+    padding: 36px 12px 0 12px;
         }
 
         .practice h1 {
@@ -772,7 +789,7 @@
             margin: 0;
             color: #3d3d3d;
             cursor: default;
-            width: 194px;
+            width: 221px;
             line-height: 33px;
             font-family: "loro , serif";
         }
@@ -846,7 +863,6 @@
         .second-box {
             width: 278px;
             height: 71px;
-            /* border: 1px solid red; */
             background-color: hwb(0deg 55.2% 44.8%);
             flex-wrap: wrap;
             display: flex;
@@ -1043,12 +1059,12 @@
         }
 
         .second-sec p {
-            font-size: 13px;
-            padding-top: 15px;
-            color: #747877;
-            cursor: pointer;
-            width: 494px;
-            font-family: monospace;
+            font-size: 15px;
+    padding-top: 15px;
+    color: #686a6a;
+    cursor: pointer;
+    width: 566px;
+    font-family: monospace;
         }
 
         #tell ::placeholder {
@@ -1125,11 +1141,6 @@
                                 class="confidential"
                                 src="/assets/images/confidential.png"
                                 alt
-                                style="       position: absolute;
-                                top: 130px;
-                                right: 23px;
-                                transform: rotate(8deg);
-                                "
                             >
                             <!--  -->
                             <input id="tell" type="textareas" placeholder="Tell us about your case here...">
@@ -1146,7 +1157,8 @@
                     </div>
                 </div>
                 <!--  -->
-                <div class="third-family">
+             <div class="third-family">
+
                     <div class="third-first">
                         <h1>
                             CHARGED WITH
@@ -1157,10 +1169,12 @@
                             class="clipbord"
                             src="/assets/images/paste_board.gif"
                             alt
-                            style="    width: 81px;
+                            style="   
 position: absolute;
-right: 30px;
-top: 54px;"
+right: 26px;
+width: 87px;
+top: 62px;"
+
                         >
                         <p>
                             Being charged with a DUI can be scary. get the help
@@ -1168,7 +1182,7 @@ top: 54px;"
                         </p>
                         <h3>
                             Click here to let us know
-                        how we can help you withyour case.
+                        how we can help you with your case.
                         </h3>
                         <hr>
                         <div class="third-click">
@@ -1184,17 +1198,17 @@ top: 54px;"
                                 LAW
                                 <span>BLOG</span>
                             </h1>
-                            <h2>Learn more about VIrginia traffic Laws</h2>
+                            <h2>Learn more about Virginia traffic Laws</h2>
                             <img class="pic" src="/assets/images/pic1.gif" alt>
                             <hr>
                             <div class="second-red">
                                 <h3>
                                     CLICK HERE &nbsp;
-                                    <img src="/assets/images/bullet_white.gif" alt>
+                                    <img  src="/assets/images/bullet_white.gif" alt>
                                 </h3>
                             </div>
                             <hr style="   
-         width: 385px;
+        width: 464px;
     height: 1px;
     background-color: #dbdbdb;
     border: 0;
@@ -1202,8 +1216,8 @@ top: 54px;"
     position: absolute;
     top: 8pc;
     left: 0;">
-                            <img src="/assets/images/order_icon.gif" alt style="    position: absolute;
-    right: 8px;
+                            <img class="second-container-third-hr" src="/assets/images/order_icon.gif" alt style="    position: absolute;
+    right: 34px;
     top: 145px;">
                         </div>
                         <div class="third-red">
@@ -1217,13 +1231,13 @@ top: 54px;"
                             <br>
                             Read our latest case results
                         </h4>
-                        <hr style="    width: 154px;
-height: 1px;
-background-color: #bba7a7;
-border: 0;
-margin: 0;
-position: absolute;
-top: 217px;">
+                        <hr style=" width: 189px;
+                        height: 1px;
+                        background-color: #bba7a7;
+                        border: 0;
+                        margin: 0;
+                        position: absolute;
+                        top: 224px;  ">
                         <div class="second-last">
                             <h5>
                                 CLICK HERE &nbsp;
@@ -1233,8 +1247,8 @@ top: 217px;">
                     </div>
                     <div class="third-last">
                         <div class="logos">
-                            <img src="/assets/images/qqq.gif" alt style="width: 92px;">
-                            <img src="/assets/images/national_college_small.gif" alt style="width: 92px;">
+                            <img src="/assets/images/qqq.gif" alt style="width: 119px;">
+                            <img src="/assets/images/national_college_small.gif" alt style="width: 107px;">
                         </div>
                         <div id="end">
                             <h4>
@@ -1246,14 +1260,14 @@ top: 217px;">
                             Virginians for over 30 years.
                             </h5>
                         </div>
-                        <hr style="    width: 190px;
-    height: 1px;
-    background-color: #bba7a7;
-    border: 0;
-    margin: 0;
-    position: absolute;
-    top: 212px;
-    left: 73px;">
+                        <hr style="     width: 180px;
+                        height: 1px;
+                        background-color: #bba7a7;
+                        border: 0;
+                        margin: 0;
+                        position: absolute;
+                        top: 212px;
+                        left: 98px;">
                         <div id="third-last">
                             <h6>
                                 LEARN MORE &nbsp;
@@ -1262,13 +1276,16 @@ top: 217px;">
                         </div>
                     </div>
                     <img class="shadow" src="/assets/images/hr_shadow.png" alt>
-                </div>
-                <div class="thirdmaincontainer">
+                </div> 
+
+<!-- \\..........................thirdmaincontainer.............................// -->
+                
+<div class="thirdmaincontainer">
                     <div class="last-section">
                         <div class="first-sec">
                             <div class="practice">
                                 <h1>
-                                    Practice
+                                    PRACTICE
                                     <span>AREAS</span>
                                 </h1>
                                 <!--  -->
@@ -1326,20 +1343,7 @@ width: 12px;">
                         <div class="second-sec">
                             <h2>&#60;H1&#62; PAGE TITLE HERE</h2>
                             <p>
-                                Lorem ipsum dolor sit amet ectetur adipisicing
-                            elit. Repudiandae mollitia adipisci non
-                            accusamus, iunesciunt ducimus, voluptatum, rerum
-                            eaque? Soluta nisi quasi architecto nesciunt cum
-                            placeat aperiam alias.
-                            Iusto quam, a ratione vitae vosint sequi nemo
-                            veritatis quaerat excepturi quasi unde et neque
-                            vel. tur aliquid vero, repellendus voluptatum
-                            possimus vitae laboriosam magni quas fugit odit!
-                            Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Commodi quidem deserunt
-                            repudiandae itaque sequi voluptatibus, explicabo
-                            praesentium doloribus voluptates qui
-                            consectetur?
+                                Asunt in anim uis aute irure dolor in reprehenderit velit esse cillum dolore eu fugiat mulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in anim id est laborum. Allamco laboris nisi ut aliquip ex ea commodo consequat. Aser velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in anim id est laborum&gt;Asunt in anim uis aute irure dolor in reprehederit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteurur sint occaecat cupidatat, sunt in anim id est laborum. Allamco labro nisi ut aliquip ex ea commodo condequat. Aser velit esse cillum dolore eu fugiat nulla paraitur.Excepteur sint occaecat cupidatat non proident, sunt in animid est laborum.
                             </p>
                         </div>
                         <div class="third-sec">
@@ -1437,8 +1441,10 @@ margin-top: 15px;">
                                 background: #807f7d;
     ">
                                 <img src="/assets/images/lf_bt_hr_shadow.png" alt style="width: 118px;
-                                border:0;">
-
+                                border:0;
+                                height: 7px;
+                                overflow: hidden;
+                                ">
 
                                 <div class="finish">
                                     <img src="/assets/images/fb_icon.gif" alt style="cursor: pointer;">
