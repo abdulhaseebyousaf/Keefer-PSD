@@ -26,18 +26,15 @@
             .maincontainer {
                 overflow: hidden;
             }
-            .image .question {
-                width: 156px !important;
-    height: 38px !important; 
-            }
             .national{
                 flex-direction: row !important;
         display: flex !important;
         width: auto !important;
         flex-wrap: wrap !important;   
         gap: 12px;    
-        align-items: center ;
-            }
+        align-items: center ; 
+        overflow: hidden;
+           padding: 0!important; }
   .client{
     display: flex;
         justify-content: center;
@@ -55,10 +52,9 @@
             }
             .second-sec h2 {
                 font-size: 22px !important;
+                width: 302px;
             }
-            .question h4{
-                font-size: 26px !important;
-            }
+        
             .second-last {
                 width: 318px;
                 height: 290px;
@@ -87,34 +83,7 @@
 .follow{
 align-items: center !important;
 }
-        /* .second-sec{
-            display: flex;
-    overflow: hidden;
-     align-content: center; 
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-        } */
 
-   
-            .question-second {
-                width: 174px !important;
-        display: flex;
-        height: 50px;
-            }
-
-            #for-name {
-                height: 87px !important;
-                justify-content: space-evenly !important;
-                width: 255px !important;
-            }
-
-            .confidential {
-                top: 113px !important;
-                right: 8px !important;
-                height: 24px !important;
-                transform: rotate(15deg) !important;
-            }
 
             .third {
                 width: 356px !important;
@@ -123,49 +92,47 @@ align-items: center !important;
             .container-first {
      justify-content: center !important;
                 padding-top: 14px;
+                overflow: hidden;
                 background-color: #ffffff;
             }
-            .image-last{
-    width: 339px !important;
-    flex-direction: column;
-    height: 71px !important;
-    justify-content: space-evenly !important;
-}
 
-            .question-second span{
-                font-size: 16px !important;
-            }
-            .image p{
-                height: 47px !important;
-                font-size: 13px !important;
-                padding-left: 9px !important;
-            }
-            .image p span {
-                font-size: 14px !important;
-            }
             .second-container-third-hr {
     right: 2px !important;
     top: 152px !important;
     width: 101px !important;
             }
-            .secon-image{
-                width: 100% !important;
-                margin-bottom: 30px;
-            }
+      
         }
-        @media only screen and (max-width: 860px) { 
-           .second-sec{
-
-               display: flex;
-               overflow: hidden;
-               align-content: center;
-               flex-direction: row;
-               flex-wrap: wrap;
-               justify-content: center;
-               
+        
+        @media only screen and (max-width: 1240px){
+            .confidential{
+                top: 156px!important;
+                right: 32px !important;
+                height: 50px !important;
             }
-        }
-
+            .image-last{
+                padding-left: 7px;
+            }
+            .image{
+                width: auto !important;
+            }
+            #first-con-first-img{
+                width: 51% !important;
+            }
+            }
+            
+            @media only screen and (max-width: 1228px) { 
+                .second-family{
+                    flex-direction: column !important;
+        
+                }
+                #first-con-first-img{
+                    width: auto !important;
+                    padding-bottom: 22px;
+                }
+             
+            }
+ 
         @font-face {
             font-family: "PERTID";
             src: url("/project4.html/dropbox /Text\ Regular\ Regular.ttf/PERTIBD.TTF");
@@ -215,7 +182,7 @@ body{
         }
 
         .call-help {
-            width: 439px;
+            width: 422px;
     height: 128px;
     display: flex;
     flex-direction: row;
@@ -325,7 +292,7 @@ body{
     flex-wrap: wrap;
     justify-content: flex-end;
     position: relative;
-    right: 50px;
+    right: 41px;
         }
 
 
@@ -338,7 +305,7 @@ body{
     overflow: hidden;
         }
         #first-con-first-img{
-            width: 55%;
+            width: 53%;
         }
 .secon-image{
     width: 100%;
@@ -347,10 +314,9 @@ body{
 }
 .second-cont-secon{
     display: flex;
-    justify-content: space-between;
 }
         .image {
-            width: 43%;
+            /* width: 42%; */
     background-image: url("/assets/images/form_bg.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -366,25 +332,23 @@ body{
         }
 /*  */
         .question h4 {
-            margin: auto;
             font-size: 36px;
             font-weight: bolder;
             cursor: pointer;
             color: white;
             font-family: "PERTID", monospace;
-        }
-
-        .question-second {
-            width: 281px;
+            margin: 0;
+            padding-right: 15px;
+            padding-left: 18px;
         }
 
         .question-second h3 {
             font-size: 23px;
-    color: #161616;
     font-family: system-ui;
     cursor: default;
-    font-weight: 700;
-    margin: 6px;
+    padding-left: 39px;
+    margin-bottom: 0px;
+    margin-top: 8px;
         }
 
         .question-second span {
@@ -397,13 +361,13 @@ body{
     letter-spacing: 1.1px;
         }
         .image p {
-            margin: auto;
     cursor: pointer;
     font-weight: 600;
     font-family: sans-serif;
     font-size: 17px;
     max-width: 464px;
-    padding-left: 2px;
+    padding-left: 36px;
+    margin-top: 12px;
     color: rgba(0, 0, 0, 0.767);
         }
 
@@ -441,8 +405,8 @@ body{
         }
         .confidential {
             position: absolute;
-    top: 170px;
-    right: 48px;
+    top: 156px;
+    right: 33px;
     transform: rotate(7deg);
     height: 52px;
     }
@@ -451,15 +415,18 @@ body{
             border: 0.5px solid #c0c0c0;
         }
 #text-second-four{
-    max-width: 465px;
-    margin: auto;
+    max-width: 442px;
+    padding-left: 53px;
+    height: 129px;
+    padding-right: 47px;
+    align-content: center;
 }
         #tell {
-            width: 449px;
+            width: 431px;
     font-weight: 600;
-    padding-bottom: 30px;
+    padding-bottom: 32px;
     padding-left: 9px;
-    height: 45px;
+    height: 48px;
         }
 
         #tell::placeholder {
@@ -467,13 +434,15 @@ body{
             font-size: larger;
         }
         #section-third-last{
-            max-width: 511px;
-            margin: auto;
+            max-width: 470px;
+            padding-left: 37px;
+            padding-bottom: 11px;    
         }
+
 
         .image-last {
             height: 59px;
-    width: 484px;
+    width: 463px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -482,19 +451,19 @@ body{
 
         .image-last h5 {
             margin: 0;
-    font-size: 14px;
+    font-size: 15px;
     letter-spacing: 1.1px;
     cursor: pointer;
     font-family: "Tinos" serif;
     display: flex;
     font-weight: 600;
     color: #565751;
-    padding-left: 16px;
+    padding-left: 0px;
         }
 
         .ask-about {
-            width: 276px;
-    height: 51px;
+            width: 260px;
+    height: 53px;
     display: flex;
     background-color: #980806;
         }
@@ -589,12 +558,11 @@ body{
     bottom: 21px;
     right: 42px;
     display: flex;
-        }
-        .third-click {
-           box-shadow: 
+    box-shadow: 
            -17px 0 10px -5px rgb(122 107 107 / 50%),
             16px 0 10px -5px rgb(43 38 38 / 50%);
         }
+
         .third-click h5 {
             margin: auto;
             color: white;
@@ -630,7 +598,6 @@ body{
 
         .third-second span {
             color: #692b30;
-
         }
 
         .third-second h2 {
@@ -670,12 +637,11 @@ body{
     top: 90px;
     left: 77px;
     display: flex;
-        }
-        .second-red {
-            box-shadow: 
+    box-shadow: 
             -17px 0 10px -5px rgb(122 107 107 / 50%),
-            16px 0 10px -5px rgb(43 38 38 / 50%);
-        }
+            16px 0 10px -5px rgb(43 38 38 / 50%);        
+}
+       
         .second-red h3 {
             margin: auto;
             color: white;
@@ -1015,12 +981,11 @@ body{
             position: relative;
             left: 47px;
             top: -1px;   
-        }
-        .third-secc-third {
-    box-shadow: 
+            box-shadow: 
     -17px 0 10px -5px rgba(0, 0, 0, 0.5),
-        16px 0 10px -5px rgba(0, 0, 0, 0.5);
+        16px 0 10px -5px rgba(0, 0, 0, 0.5);   
         }
+   
         .third-secc-third h5 {
             margin: auto;
             width: 90px;
@@ -1170,13 +1135,13 @@ height: 112px;
                                     <h3>PHONE:</h3>
                                     <input type="text" placeholder>
                                     <div id="section-third-third">
-                                    </div>
-                                    <img
+                                        <img
                                         class="confidential"
                                         src="/assets/images/confidential.png"
                                         alt
                                         >
-                                </div>
+                                    </div>
+                                    </div>
                             </div> 
                         </div>
                             
