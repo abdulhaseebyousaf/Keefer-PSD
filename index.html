@@ -106,21 +106,20 @@ align-items: center !important;
         
         @media only screen and (max-width: 1240px){
             .confidential{
-                top: 156px!important;
-                right: 32px !important;
                 height: 50px !important;
             }
             .image-last{
-                padding-left: 7px;
+                padding-left: 1px;
             }
             .image{
                 width: auto !important;
             }
             #first-con-first-img{
-                width: 51% !important;
+                width: 52% !important;
             }
-            }
-            
+        
+        }
+
             @media only screen and (max-width: 1228px) { 
                 .second-family{
                     flex-direction: column !important;
@@ -130,8 +129,22 @@ align-items: center !important;
                     width: auto !important;
                     padding-bottom: 22px;
                 }
-             
+                
+                .image .question{
+                    width: 0 !important;
+                } 
+                .second-cont-secon {
+                    max-width: 0 !important;
+                }
+                .question-second{
+                    width: 0;
+                }
+                .image p{
+                     max-width: 0 !important;
+                }
             }
+            
+        
  
         @font-face {
             font-family: "PERTID";
@@ -141,11 +154,7 @@ align-items: center !important;
     
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Qwitcher+Grypen:wght@400;700&display=swap');
 /*  */
-        @font-face {
-            font-family: "Bond";
-            src: url("/project4.html/dropbox /Text\ Regular\ Regular.ttf/PERTIBD.TTF");
-        }
-
+        
         @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&display=swap');
 
         @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
@@ -154,6 +163,7 @@ align-items: center !important;
         @import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     
+ 
 body{
     margin: 0;
 }
@@ -281,7 +291,7 @@ body{
             height: 55px;
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 20px;
         }
 
         .second-menu-width {
@@ -314,6 +324,7 @@ body{
 }
 .second-cont-secon{
     display: flex;
+    max-width: max-content;
 }
         .image {
             /* width: 42%; */
@@ -322,6 +333,7 @@ body{
     background-size: 100% 100%;
     position: relative;
     overflow: hidden;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
         }
 
         .image .question {
@@ -330,7 +342,6 @@ body{
     display: flex;
     background-color: #a00f11;
         }
-/*  */
         .question h4 {
             font-size: 36px;
             font-weight: bolder;
@@ -363,6 +374,8 @@ body{
         .image p {
     cursor: pointer;
     font-weight: 600;
+    padding-left: 36px;
+    padding-right: 33px;
     font-family: sans-serif;
     font-size: 17px;
     max-width: 464px;
@@ -381,14 +394,17 @@ body{
 
         #for-name {
             height: 86px;
-    width: 343px;
+    width: 457px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-between;
         }
-
+        .confidential {
+     padding-top: 15px;
+    transform: rotate(7deg);
+    height: 50px;
+    }
         .name {
             height: 25px;
         }
@@ -403,22 +419,15 @@ body{
             letter-spacing: 0.1px;
             color: #232628;
         }
-        .confidential {
-            position: absolute;
-    top: 156px;
-    right: 33px;
-    transform: rotate(7deg);
-    height: 52px;
-    }
+ 
         input {
             height: 20px;
             border: 0.5px solid #c0c0c0;
         }
 #text-second-four{
-    max-width: 442px;
-    padding-left: 53px;
+    max-width: 447px;
+    padding-left: 37px;
     height: 129px;
-    padding-right: 47px;
     align-content: center;
 }
         #tell {
@@ -435,14 +444,14 @@ body{
         }
         #section-third-last{
             max-width: 470px;
-            padding-left: 37px;
-            padding-bottom: 11px;    
+    padding-left: 29px;
+    padding-bottom: 11px;
         }
 
 
-        .image-last {
+        .image-last { 
             height: 59px;
-    width: 463px;
+    width: 452px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -451,22 +460,20 @@ body{
 
         .image-last h5 {
             margin: 0;
-    font-size: 15px;
-    letter-spacing: 1.1px;
+    font-size: 16px;
     cursor: pointer;
-    font-family: "Tinos" serif;
+    font-family: system-ui, -apple-system , 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
     font-weight: 600;
     color: #565751;
-    padding-left: 0px;
         }
 
         .ask-about {
-            width: 260px;
-    height: 53px;
-    display: flex;
-    background-color: #980806;
-        }
+        width: 261px;
+        height: 53px;
+        display: flex;
+background-color:#980806;
+    }
 
         .ask-about h6 {
             margin: auto;
@@ -880,7 +887,10 @@ body{
             left: 116px;
             width: 132px;
         }
-
+        #second-third{
+    max-width: 473px;
+    padding-left: 41px;
+        }
         .more-about {
             width: 275px;
     height: 210px;
@@ -1134,13 +1144,13 @@ height: 112px;
                                 <div class="name">
                                     <h3>PHONE:</h3>
                                     <input type="text" placeholder>
+                                </div>
                                     <div id="section-third-third">
                                         <img
                                         class="confidential"
                                         src="/assets/images/confidential.png"
                                         alt
                                         >
-                                    </div>
                                     </div>
                             </div> 
                         </div>
