@@ -12,6 +12,9 @@
 .body{
     overflow: hidden;
 }
+.second-family {
+    padding-top: 23px !important;
+}
 
 #avo{
     width: 131px !important;
@@ -34,7 +37,7 @@
         display: flex !important;
         width: auto !important;
         flex-wrap: wrap !important;   
-        gap: 40px;    
+        gap: 33px;    
         align-items: center ; 
         overflow: hidden;
            padding: 0!important; 
@@ -84,7 +87,7 @@
             .third-second .pic{
                 width: 122px !important;
                 right: 14px !important;
-                top: 32px  !important;
+                top: 5px  !important;
             }
 .follow{
 align-items: center !important;
@@ -236,9 +239,7 @@ height: 37px !important;
                 .third-family {
                     padding-top : 0 !important;
                 }
-                .last-section {
-                    gap: 30px !important;
-                }
+              
 
 
             }
@@ -588,6 +589,25 @@ input {
     .question {
         width: 234px !important;
     }
+    .third-first {
+        width: 443px !important;
+    }
+    .third-first h1 {
+        padding-left: 24px;
+    }
+    .third-first h2 {
+        padding-left: 24px;
+    }
+    .third-first p {
+        padding-left: 24px;
+        width: 174px !important;
+        font-size: 15px !important;
+    }
+    .third-first h3 {
+        width: 174px !important;
+        padding-left: 24px;
+        font-size: 15px  !important;
+    }
     .image p {
         font-size: 22px !important;
     }
@@ -816,6 +836,11 @@ input {
         padding-left: 22px !important;
     }
 }
+@media only screen and (max-width: 500px) {
+   
+}
+
+
 @media only screen and (max-width: 591px) {
     .question {
         width: 217px !important;
@@ -967,12 +992,7 @@ input {
     }
 }
 @media only screen and (max-width: 489px) {
-    #second-last-hr {
-top: 237px !important;
-    }
-    #third-last {
-        top: 238px !important;
-    }
+
 }
 @media only screen and (max-width: 489px) {
     .question {
@@ -998,6 +1018,12 @@ top: 237px !important;
     }
     .third-last {
         padding-top: 15px;
+    }
+    #second-last-hr {
+top: 237px !important;
+    }
+    #third-last {
+        top: 238px !important;
     }
 }
 @media only screen and (max-width: 485px) {
@@ -1582,15 +1608,13 @@ body{
             display: flex;
         }
 
-        .home:hover {
-            background-color: rgb(10, 131, 131);
-        }
+        
 
         .home h1 {
             font-size: 19px;
             font-family: sans-serif;
             color: white;
-            cursor: pointer;
+            cursor: default;
             letter-spacing: 1.1px;
             margin: auto;
         }
@@ -1598,12 +1622,15 @@ body{
             color: white;
             font-family: sans-serif;
             font-size: 19px;
-            cursor: pointer;
+            cursor: default;
             letter-spacing: 1.1px;
             margin: 0;
+            height: 55px;
+            display:flex;
+            align-items: center;
         }
-        .menu h2:hover {
-            background-color: #2c8173;
+        .bio :hover {
+            background: #656565;
         }
 
         .menu-width {
@@ -2436,12 +2463,22 @@ height: 112px;
                                 <div class="home">
                                     <h1>HOME</h1>
                                 </div>
-                                <h2>BIOGRAPHY</h2>
+                                <div class="bio">
+                                    <h2>BIOGRAPHY</h2>
+                                </div>
                             </div>
-                            <h2>BLOG</h2>
-                            <h2>AREAS WE SERVE</h2>
-                            <h2>LIBRARY</h2>
-                            <h2>CONTACT</h2>
+                            <div class="bio">
+                                <h2>BLOG</h2>
+                            </div>
+                            <div class="bio">
+                                <h2>AREAS WE SERVE</h2>
+                            </div>
+                            <div class="bio">
+                                <h2>LIBRARY</h2>
+                            </div>
+                            <div class="bio">
+                                <h2>CONTACT</h2>
+                            </div>
                         </div>
                     </div>
                 </div>
