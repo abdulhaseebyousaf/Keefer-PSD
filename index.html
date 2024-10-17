@@ -24,7 +24,7 @@
     height: 137px;
 }
             .menu {
-                display: none !important;
+             height: 50px;
             }
             .maincontainer {
                 overflow: hidden;
@@ -34,10 +34,12 @@
         display: flex !important;
         width: auto !important;
         flex-wrap: wrap !important;   
-        gap: 12px;    
+        gap: 40px;    
         align-items: center ; 
         overflow: hidden;
-           padding: 0!important; }
+           padding: 0!important; 
+        justify-content: center !important;
+        }
   .client{
     display: flex;
         justify-content: center;
@@ -69,6 +71,7 @@
 
             .first-image {
                 width: 349px;
+                
             }
 
             .call-help {
@@ -92,9 +95,6 @@ align-items: center !important;
             }
 
             .container-first {
-     justify-content: center !important;
-                padding-top: 14px;
-                overflow: hidden;
                 background-color: #ffffff;
             }
 
@@ -681,6 +681,13 @@ input {
             font-size: 34px !important;
             padding-left: 51px !important;
     }
+    .first-image {
+        width: -webkit-fill-available !important;
+    }
+    .container-first {
+        justify-content: center !important;
+        padding:0 !important;
+    }
   
     .question h4{
         font-size: 36px !important;
@@ -960,6 +967,14 @@ input {
     }
 }
 @media only screen and (max-width: 489px) {
+    #second-last-hr {
+top: 237px !important;
+    }
+    #third-last {
+        top: 238px !important;
+    }
+}
+@media only screen and (max-width: 489px) {
     .question {
         width: 173px !important;
         height: 49px !important;
@@ -981,6 +996,12 @@ input {
     .image p span {
         font-size: 20px !important;
     }
+    .third-last {
+        padding-top: 15px;
+    }
+}
+@media only screen and (max-width: 485px) {
+
 }
 @media only screen and (max-width: 466px){
 .question {
@@ -2593,7 +2614,7 @@ top: 62px;"
                             Virginians for over 30 years.
                             </h5>
                         </div>
-                        <hr style="     width: 180px;
+                        <hr id="second-last-hr" style="     width: 180px;
                         height: 1px;
                         background-color: #bba7a7;
                         border: 0;
