@@ -440,6 +440,9 @@ input {
     .bulletwhite {
     width: 15px !important;
 }
+.second-sec {
+    align-items: center;
+}
 }
           @media only screen and (max-width: 865px){
             .question h4 {
@@ -1529,6 +1532,9 @@ font-size: 17px;
  
 body{
     margin: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
         .maincontainer {
@@ -1548,10 +1554,11 @@ body{
         /* first contact office */
         .container-first {  
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            overflow: hidden;
-            justify-content: space-between;
+    justify-content: space-between;
+    max-width: 1260px;
+    overflow: hidden;
+    margin: auto;
+           
         }
 
         .call-help {
@@ -1606,67 +1613,32 @@ body{
             color: #4a4a4a;
         }
 
-        .menu {
-            width: -webkit-fill-available;
-            background-color: #5e0807;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: flex-end;
+        #second-first-line{
+ background-color: rgba(128, 0, 0, 0.923); 
         }
-
-        .home {
-            background-color: #656565;
-            width: 115px;
-            height: 55px;
-            display: flex;
-        }
-
-        
-
-        .home h1 {
-            font-size: 19px;
-            font-family: sans-serif;
-            color: white;
-            cursor: default;
-            letter-spacing: 1.1px;
-            margin: auto;
-        }
-        .menu h2 {
-            color: white;
-            font-family: sans-serif;
-            font-size: 19px;
-            cursor: default;
-            letter-spacing: 1.1px;
-            margin: 0;
-            height: 55px;
-            display:flex;
-            align-items: center;
-        }
-        .bio :hover {
-            background: #656565;
-        }
-
-        .menu-width {
-            height: 55px;
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .second-menu-width {
-            display: flex;
-    flex-direction: row;
-    gap: 30px;
+        .second-five{
+            max-width: 1211px;
+    margin: auto;
+    display: flex;
+    justify-content: end;
     align-items: center;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    position: relative;
-    right: 41px;
+    overflow: hidden;
+        }
+        #second-first-line a{
+            text-decoration: none;
+    font-family: sans-serif;
+    color: rgba(255, 255, 255, 0.822);
+    font-size: 22.5px;
+    text-shadow: 2px 2px 10px rgba(42, 41, 41, 0.595);
+        }
+        #second-first-line a:hover {
+            background:#656565;
+        }
+        #home {
+            padding: 12px 16px;
         }
 
-
+        /*  */
         .second-family {
             max-width: 1260px;
     margin: auto;
@@ -2401,7 +2373,6 @@ background-color:#980806;
             display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: center;
     align-content: center;
         }
 
@@ -2457,6 +2428,9 @@ height: 112px;
             width: 131px;
             height: 105px;
         }
+        /* second */
+
+
         </style>
     </head>
     <body>
@@ -2472,30 +2446,16 @@ height: 112px;
                         <h4>540.433.6906</h4>
                         <h5>Get Your Questions Answered Fast</h5>
                     </div>
-                    <div class="menu">
-                        <div class="second-menu-width">
-                            <div class="menu-width">
-                                <div class="home">
-                                    <h1>HOME</h1>
-                                </div>
-                                <div class="bio">
-                                    <h2>BIOGRAPHY</h2>
-                                </div>
-                            </div>
-                            <div class="bio">
-                                <h2>BLOG</h2>
-                            </div>
-                            <div class="bio">
-                                <h2>AREAS WE SERVE</h2>
-                            </div>
-                            <div class="bio">
-                                <h2>LIBRARY</h2>
-                            </div>
-                            <div class="bio">
-                                <h2>CONTACT</h2>
-                            </div>
-                        </div>
-                    </div>
+                </div>
+                <div id="second-first-line">      
+                    <div class="second-five">
+                    <a href="#" id="home">HOME</a>
+                    <a href="#" id="home">BIOGRAPHY</a>
+                    <a href="#" id="home">BLOG</a>
+                    <a href="#" id="home">AREAS WE SERVE</a>
+                    <a href="#" id="home">LIBRARY</a>
+                    <a href="#" id="home">CONTACT</a>
+                </div>         
                 </div>
                 <!-- ..............................section first.................... -->
                 <div class="second-family">
